@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+  create: "create {{collection}} “{{slug}}”"
+  update: "update {{collection}} “{{slug}}”"
+  delete: "delete {{collection}} “{{slug}}”"
+  uploadMedia: "[skip ci] upload “{{path}}”"
+  deleteMedia: "[skip ci] delete “{{path}}”"
+
+  publish_mode: editorial_workflow
+
+  media_folder: "static/images"
+  public_folder: "/images"
+
+  
+
