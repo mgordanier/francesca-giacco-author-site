@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-  create: "create {{collection}} “{{slug}}”"
-  update: "update {{collection}} “{{slug}}”"
-  delete: "delete {{collection}} “{{slug}}”"
-  uploadMedia: "[skip ci] upload “{{path}}”"
-  deleteMedia: "[skip ci] delete “{{path}}”"
+    create: "content: create {{collection}} “{{slug}}”"
+    update: "content: update {{collection}} “{{slug}}”"
+    delete: "content: delete {{collection}} “{{slug}}”"
+    uploadMedia: "content: upload “{{path}}”"
+    deleteMedia: "content: delete “{{path}}”"
 
   publish_mode: editorial_workflow
 
