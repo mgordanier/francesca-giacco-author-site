@@ -19,59 +19,31 @@ collections:
         label: 'Landing Page'
         name: 'index'
         fields:
+          - { label: 'Book Cover Image', name: bookcoverimage, widget: image }
           - {
-              label: 'Book Pitch',
-              name: bookpitch,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: 'Book Cover Image',
-                    name: bookcoverimage,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        {
-                          label: Alt,
-                          name: alt,
-                          widget: string,
-                          hint: "NOTE: The book cover image's alt text will be used as the primary heading of the landing page for screen readers and search engines.",
-                        },
-                      ],
-                  },
-                  { label: 'Blurb', name: blurb, widget: text },
-                  { label: 'Description', name: description, widget: text },
-                ],
+              label: 'Book Cover Alt Text',
+              name: bookcoveralttext,
+              widget: string,
+              hint: "NOTE: The book cover image's alt text will be used as the primary heading of the landing page for screen readers and search engines.",
             }
+          - { label: 'Book Pitch', name: bookpitch, widget: markdown }
           - {
-              label: 'Buy CTA',
-              name: buycta,
-              widget: object,
+              label: 'Book Description',
+              name: bookdescription,
+              widget: markdown,
+            }
+          - { label: 'Buy Heading', name: buyheading, widget: string }
+          - {
+              label: 'Buy Button',
+              name: buybutton,
+              widget: list,
+              allow_add: true,
+              min: 1,
+              max: 3,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  {
-                    label: 'Buy Buttons',
-                    name: buybuttons,
-                    widget: list,
-                    allow_add: true,
-                    min: 1,
-                    max: 3,
-                    fields:
-                      [
-                        {
-                          label: 'Vendor Name',
-                          name: vendorname,
-                          widget: text,
-                        },
-                        {
-                          label: 'Vendor Link',
-                          name: vendorlink,
-                          widget: text,
-                        },
-                      ],
-                  },
+                  { label: 'Vendor Name', name: vendorname, widget: text },
+                  { label: 'Vendor Link', name: vendorlink, widget: text },
                 ],
             }
           - {
@@ -81,26 +53,18 @@ collections:
               allow_add: true,
               fields:
                 [
-                  { label: 'Quote', name: quote, widget: text },
-                  { label: Attribution, name: attribution, widget: text },
+                  { label: 'Quote', name: quote, widget: markdown },
+                  { label: Attribution, name: attribution, widget: markdown },
                 ],
+            }
+          - { label: 'Author Photo', name: authorphoto, widget: image }
+          - {
+              label: 'Author Photo Alt text',
+              name: authorphotoalttext,
+              widget: string,
             }
           - {
               label: 'Mini About the Author',
               name: miniabout,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: 'Author Photo',
-                    name: authorphoto,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  { label: 'Mini About', name: miniabout, widget: markdown },
-                ],
+              widget: markdown,
             }
