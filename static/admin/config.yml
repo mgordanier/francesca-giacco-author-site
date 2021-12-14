@@ -15,7 +15,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: 'src/pages/index.md'
+      - file: 'src/content/markdown/index.md'
         label: 'Landing Page'
         name: 'index'
         fields:
@@ -42,8 +42,8 @@ collections:
               max: 3,
               fields:
                 [
-                  { label: 'Vendor Name', name: vendorname, widget: text },
-                  { label: 'Vendor Link', name: vendorlink, widget: text },
+                  { label: 'Vendor Name', name: vendorname, widget: string },
+                  { label: 'Vendor Link', name: vendorlink, widget: string },
                 ],
             }
           - {
