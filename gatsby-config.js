@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "francesca-giacco-author-site",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'francesca-giacco-author-site',
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+    'gatsby-plugin-netlify-cms',
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
@@ -16,7 +16,15 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/content/images/",
+      },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown",
+        path: "./src/content/markdown/",
       },
       __key: "images",
     },
