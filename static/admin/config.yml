@@ -19,31 +19,31 @@ collections:
         label: 'Landing Page'
         name: 'index'
         fields:
-          - { label: 'Book Cover Image', name: bookcoverimage, widget: image }
+          - { label: 'Book Cover Image', name: book_cover_image, widget: image }
           - {
               label: 'Book Cover Alt Text',
-              name: bookcoveralttext,
+              name: book_cover_alt_text,
               widget: string,
               hint: "NOTE: The book cover image's alt text will be used as the primary heading of the landing page for screen readers and search engines.",
             }
-          - { label: 'Book Pitch', name: bookpitch, widget: markdown }
+          - { label: 'Book Pitch', name: book_pitch, widget: markdown }
           - {
               label: 'Book Description',
-              name: bookdescription,
+              name: book_description,
               widget: markdown,
             }
-          - { label: 'Buy Heading', name: buyheading, widget: string }
+          - { label: 'Buy Heading', name: buy_heading, widget: string }
           - {
               label: 'Buy Button',
-              name: buybutton,
+              name: buy_button,
               widget: list,
               allow_add: true,
               min: 1,
               max: 3,
               fields:
                 [
-                  { label: 'Vendor Name', name: vendorname, widget: string },
-                  { label: 'Vendor Link', name: vendorlink, widget: string },
+                  { label: 'Vendor Name', name: vendor_name, widget: string },
+                  { label: 'Vendor Link', name: vendor_link, widget: string },
                 ],
             }
           - {
@@ -57,14 +57,14 @@ collections:
                   { label: Attribution, name: attribution, widget: markdown },
                 ],
             }
-          - { label: 'Author Photo', name: authorphoto, widget: image }
+          - { label: 'Author Photo', name: author_photo, widget: image }
           - {
               label: 'Author Photo Alt text',
-              name: authorphotoalttext,
+              name: author_photo_alt_text,
               widget: string,
             }
           - {
               label: 'Mini About the Author',
-              name: miniabout,
+              name: mini_about,
               widget: markdown,
             }
