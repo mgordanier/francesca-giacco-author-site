@@ -15,7 +15,7 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - file: 'src/content/markdown/index.md'
+      - file: 'src/content/markdown/index.mdx'
         label: 'Landing Page'
         name: 'index'
         fields:
