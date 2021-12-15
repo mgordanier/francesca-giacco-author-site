@@ -1,5 +1,5 @@
 ---
-bookcoverimage: /images/giacco_sixdaysinrome_9781538706428_hc.jpg
+bookcoverimage: /images/authorphoto2.jpg
 bookcoveralttext: Six Days in Rome by Francesca Giacco
 bookpitch: In this decadent, deeply evocative novel, a young artist travels to
   Rome to heal a broken heart, where she ​confronts loneliness and intimacy,
