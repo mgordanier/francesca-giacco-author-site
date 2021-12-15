@@ -8,7 +8,7 @@ backend:
     uploadMedia: 'content: upload “{{path}}”'
     deleteMedia: 'content: delete “{{path}}”'
 
-media_folder: 'static/images'
+media_folder: 'src/content/images'
 public_folder: '/images'
 
 collections:
