@@ -9,7 +9,7 @@ backend:
     deleteMedia: 'content: delete “{{path}}”'
 
 media_folder: 'src/content/images'
-public_folder: '/images'
+public_folder: '../images'
 
 collections:
   - name: 'pages'
@@ -19,12 +19,18 @@ collections:
         label: 'Landing Page'
         name: 'index'
         fields:
+          - {
+              label: 'Title',
+              name: title,
+              widget: hidden,
+              default: 'Francesca Giacco',
+            }
           - { label: 'Book Cover Image', name: book_cover_image, widget: image }
           - {
               label: 'Book Cover Alt Text',
               name: book_cover_alt_text,
               widget: string,
-              hint: "NOTE: The book cover image's alt text will be used as the primary heading of the landing page for screen readers and search engines.",
+              hint: "NOTE: The book cover image's alt text will be used as the primary heading of the landing page for screen readers.",
             }
           - { label: 'Book Pitch', name: book_pitch, widget: markdown }
           - {
