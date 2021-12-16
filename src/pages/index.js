@@ -13,14 +13,18 @@ const IndexPage = ({ data }) => {
         <h1>Six Days in Rome by Francesca</h1>
         <p>{content.book_pitch}</p>
         <p>{content.book_description}</p>
+      </section>
+      <section>
         <h2>{content.buy_heading}</h2>
-        {content.buy_button.map((button) => {
-          return (
-            <a key={uuidv4()} href={button.vendor_link}>
-              {button.vendor_name}
-            </a>
-          );
-        })}
+        <div>
+          {content.buy_button.map((button) => {
+            return (
+              <a key={uuidv4()} href={button.vendor_link}>
+                {button.vendor_name}
+              </a>
+            );
+          })}
+        </div>
         {content.praise.map((praise) => {
           return (
             <figure key={uuidv4()}>
@@ -29,6 +33,8 @@ const IndexPage = ({ data }) => {
             </figure>
           );
         })}
+      </section>
+      <section>
         <GatsbyImage image={authorPhoto} alt={content.author_photo_alt_text} />
         <p>{content.mini_about}</p>
       </section>
