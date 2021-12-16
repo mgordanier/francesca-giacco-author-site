@@ -3,16 +3,18 @@ import { graphql } from 'gatsby';
 import { v4 as uuidv4 } from 'uuid';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
+import MarkdownContent from '../components/MarkdownContent';
 
 const IndexPage = ({ data }) => {
   const content = data.allMdx.nodes[0].frontmatter;
   const authorPhoto = getImage(content.author_photo);
+
   return (
     <Layout>
       <section>
         <h1>Six Days in Rome by Francesca</h1>
         <p>{content.book_pitch}</p>
-        <p>{content.book_description}</p>
+        <MarkdownContent content={content.book_description} />
       </section>
       <section>
         <h2>{content.buy_heading}</h2>
