@@ -6,8 +6,8 @@ import Layout from '../components/Layout';
 import MarkdownContent from '../components/MarkdownContent';
 
 const IndexPage = ({ data }) => {
-  const content = data.allMdx.nodes[0].frontmatter;
-  const authorPhoto = getImage(content.author_photo);
+  // const content = data.allMdx.nodes[0].frontmatter;
+  // const authorPhoto = getImage(content.author_photo);
 
   return (
     <Layout>
