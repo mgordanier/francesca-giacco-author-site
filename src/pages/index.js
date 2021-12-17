@@ -12,8 +12,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <section>
         <h1>Six Days in Rome by Francesca</h1>
-        <p>{content.book_pitch}</p>
-        <MarkdownContent content={content.book_description} />
+        <MarkdownContent tag="div" content={content.book_pitch} />
+        <MarkdownContent tag="div" content={content.book_description} />
       </section>
       <section>
         <h2>{content.buy_heading}</h2>
@@ -26,18 +26,23 @@ const IndexPage = ({ data }) => {
             );
           })}
         </div>
-        {content.praise.map((praise) => {
-          return (
-            <figure key={uuidv4()}>
-              <blockquote>{praise.quote}</blockquote>
-              <figcaption>{praise.attribution}</figcaption>
-            </figure>
-          );
-        })}
+        <div>
+          {content.praise.map((praise) => {
+            return (
+              <figure key={uuidv4()}>
+                <MarkdownContent tag="blockquote" content={praise.quote} />
+                <MarkdownContent
+                  tag="figcaption"
+                  content={praise.attribution}
+                />
+              </figure>
+            );
+          })}
+        </div>
       </section>
       <section>
         <GatsbyImage image={authorPhoto} alt={content.author_photo_alt_text} />
-        <p>{content.mini_about}</p>
+        <MarkdownContent tag="div" content={content.mini_about} />
       </section>
     </Layout>
   );
