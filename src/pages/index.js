@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <section>
         <h1>Six Days in Rome by Francesca</h1>
-        <p>{content.book_pitch}</p>
+        {/* <p>{content.book_pitch}</p>
         <MarkdownContent content={content.book_description} />
       </section>
       <section>
@@ -38,46 +38,46 @@ const IndexPage = ({ data }) => {
       </section>
       <section>
         <GatsbyImage image={authorPhoto} alt={content.author_photo_alt_text} />
-        <p>{content.mini_about}</p>
+        <p>{content.mini_about}</p> */}
       </section>
     </Layout>
   );
 };
 
-export const query = graphql`
-  query LandingPage {
-    allMdx(filter: { frontmatter: { title: { eq: "Francesca Giacco" } } }) {
-      nodes {
-        frontmatter {
-          praise {
-            attribution
-            quote
-          }
-          buy_button {
-            vendor_link
-            vendor_name
-          }
-          author_photo {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          author_photo_alt_text
-          book_cover_alt_text
-          book_cover_image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          book_description
-          book_pitch
-          buy_heading
-          mini_about
-          title
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query LandingPage {
+//     allMdx(filter: { frontmatter: { title: { eq: "Francesca Giacco" } } }) {
+//       nodes {
+//         frontmatter {
+//           praise {
+//             attribution
+//             quote
+//           }
+//           buy_button {
+//             vendor_link
+//             vendor_name
+//           }
+//           author_photo {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//           author_photo_alt_text
+//           book_cover_alt_text
+//           book_cover_image {
+//             childImageSharp {
+//               gatsbyImageData
+//             }
+//           }
+//           book_description
+//           book_pitch
+//           buy_heading
+//           mini_about
+//           title
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export default IndexPage;
