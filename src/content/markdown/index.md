@@ -25,12 +25,30 @@ buy_heading: Pre-Order
 buy_button:
   - vendor_name: IndieBound
     vendor_link: https://www.indiebound.org/book/9781538706428
+  - vendor_name: Amazon
+    vendor_link: https://www.amazon.com/gp/product/1538706423?tag=hacboogrosit-20
+  - vendor_name: More Options
+    vendor_link: https://www.hachettebookgroup.com/titles/francesca-giacco/six-days-in-rome/9781538706428/
 praise:
   - quote: '"Francesca Giacco is a stunning writer and *Six Days in Rome* is a
       brilliant transporting experience—a novel about belonging with heart and
       heat; a gorgeous and literary holiday."'
     attribution: "—Lisa Taddeo, #1 New York Times bestselling author of *Three
       Women* and *Animal*"
+  - quote: “Sometimes it takes a three-thousand-year-old city to feel brand new.
+      *Six Days in Rome* unfolds with all the crisp wonderment of a two-star
+      hotel map. Sensorial as hell, it acknowledges the major landmarks and
+      thoroughfares, but knows you have to get lost in the invisible, the
+      unrendered to find what you didn’t know you were looking for. An ode to
+      funky wine labels, good taste, and true inspiration, Francesca Giacco has
+      penned a stunningly cool and stylish debut.”
+    attribution: —Paul Beatty, Man Booker Prize winning author of *The Sellout*
+  - quote: "\"If Sally Rooney and Frances Mayes co-wrote a novel in an Airbnb near
+      the Spanish Steps, it might read something like *Six Days in Rome*. Smart,
+      keenly observed, and deeply felt, this is a book for anyone who's ever
+      journeyed abroad to find themselves.\""
+    attribution: —David Ebershoff, New York Times bestselling author of *The Danish
+      Girl* and *The 19th Wife*
 author_photo: ../images/authorphoto2.jpg
 author_photo_alt_text: Author photo of Francesca Giacco.
 mini_about: >-
