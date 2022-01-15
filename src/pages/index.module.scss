@@ -1,0 +1,69 @@
+@use '../global-styles/var';
+@use '../global-styles/mixin';
+
+.book-intro-section {
+  @include mixin.light-theme;
+}
+
+.book-intro-block {
+  @include mixin.central-column;
+  padding: 90px 0 90px 0;
+  @include mixin.flex-container(start);
+  flex-direction: row-reverse;
+
+  .pitch {
+    font-weight: bold;
+  }
+  .text-block {
+    @include mixin.flex-text-block;
+    margin: 0 50px 0 0;
+  }
+  .image {
+    @include mixin.flex-image;
+    margin: 0 0 0 50px;
+  }
+}
+
+.buy-section {
+  @include mixin.dark-theme;
+}
+.buy-block {
+  @include mixin.central-column;
+  padding: 90px 0 90px 0;
+
+  .button-block {
+    @include mixin.flex-container;
+    padding: 60px 80px 80px 80px;
+  }
+  .button {
+    @include mixin.button(light);
+  }
+
+  .praise-block {
+    @include mixin.flex-container(center, center, column);
+
+    .praise {
+      width: 900px;
+      padding: 0 0 50px 0;
+    }
+  }
+}
+
+.mini-about-section {
+  @include mixin.light-theme;
+}
+.mini-about-block {
+  @include mixin.central-column;
+  @include mixin.flex-container;
+
+  .text-block {
+    @include mixin.flex-container(center, start, column);
+    @include mixin.flex-text-block;
+    margin: 0 0 0 50px;
+  }
+
+  .image {
+    @include mixin.flex-image;
+    margin: 0 50px 0 0;
+  }
+}

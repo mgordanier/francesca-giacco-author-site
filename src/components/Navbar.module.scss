@@ -1,0 +1,25 @@
+@use '../global-styles/var';
+@use '../global-styles/mixin';
+
+.navbar {
+  @include mixin.dark-theme;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  padding: 0 30px;
+  font-family: var.$font-display-reg;
+}
+
+.logo-type {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  font-size: 18px;
+
+  li {
+    padding: 0 12px;
+  }
+}

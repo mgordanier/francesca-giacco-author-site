@@ -1,0 +1,85 @@
+@use 'var';
+
+@mixin dark-theme {
+  background-color: var.$storm-grey;
+  color: var.$sky-white;
+
+  p a {
+    color: var.$warm-white;
+    text-decoration: underline;
+  }
+}
+
+@mixin light-theme {
+  background-color: var.$sky-white;
+  color: var.$blue-black;
+
+  a {
+    color: var.$interstellar-blue;
+    text-decoration: underline;
+  }
+}
+
+@mixin heading($size: large) {
+  font-family: var.$font-display-black;
+  @if ($size: large) {
+    font-size: 84px;
+    margin: 15px;
+  }
+  @if ($size: medium) {
+    font-size: 60px;
+    margin: 10px;
+  }
+}
+
+@mixin header-med {
+  font-family: var.$font-display-black;
+  font-size: 60px;
+}
+
+@mixin button($theme) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var.$font-display-reg;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  width: 225px;
+  height: 60px;
+  border-radius: 5px;
+
+  @if $theme == light {
+    background-color: var.$sky-white;
+    color: var.$blue-black;
+  } @else if $theme == dark {
+    background-color: var.$storm-grey;
+    color: var.$sky-white;
+  }
+}
+
+@mixin central-column {
+  max-width: 1150px;
+  margin: 0 140px;
+}
+
+@mixin flex-container(
+  $align-items: center,
+  $justify-content: space-between,
+  $flex-direction: row
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+@mixin flex-text-block {
+  max-width: 575px;
+  flex-grow: 0;
+}
+
+@mixin flex-image {
+  max-width: 475px;
+  flex-grow: 0;
+}

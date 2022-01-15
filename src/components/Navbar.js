@@ -1,10 +1,11 @@
 import * as React from 'react';
+import * as styles from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
-    <nav>
-      <p>Francesca Giacco</p>
-      <ul>
+    <nav className={styles.navbar}>
+      <p className={styles.logoType}>Francesca Giacco</p>
+      <ul className={styles.menu}>
         <li>About</li>
         <li>Writing</li>
         <li>Contact</li>

@@ -1,0 +1,6 @@
+@use '../global-styles/mixin';
+
+.footer {
+  @include mixin.dark-theme;
+  height: 90px;
+}
