@@ -74,3 +74,15 @@ collections:
               name: mini_about,
               widget: markdown,
             }
+      - file: 'src/content/markdown/about.md'
+        label: 'About Page'
+        name: 'about'
+        fields:
+          - { label: 'Title', name: title, widget: string, default: 'About' }
+          - { label: 'Author Photo', name: author_photo, widget: image }
+          - {
+              label: 'Author Photo Alt Text',
+              name: author_photo_alt_text,
+              widget: string,
+            }
+          - { label: 'About the Author', name: about, widget: markdown }
