@@ -8,7 +8,7 @@
 .book-intro-block {
   @include mixin.central-column;
   padding: 90px 0 90px 0;
-  @include mixin.flex-container(start);
+  @include mixin.flex-container(flex-start);
   flex-direction: row-reverse;
 
   .pitch {
@@ -46,6 +46,10 @@
       width: 900px;
       padding: 0 0 50px 0;
     }
+    .attribution {
+      text-align: right;
+      font-weight: bold;
+    }
   }
 }
 
@@ -57,7 +61,7 @@
   @include mixin.flex-container;
 
   .text-block {
-    @include mixin.flex-container(center, start, column);
+    @include mixin.flex-container(center, flex-start, column);
     @include mixin.flex-text-block;
     margin: 0 0 0 50px;
   }

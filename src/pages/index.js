@@ -56,6 +56,7 @@ const IndexPage = ({ data }) => {
                   <MarkdownContent
                     tag="figcaption"
                     content={praise.attribution}
+                    className={styles.attribution}
                   />
                 </figure>
               );
