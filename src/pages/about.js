@@ -6,9 +6,7 @@ import MarkdownContent from '../components/MarkdownContent';
 import * as styles from './about.module.scss';
 
 const AboutPage = ({ data, pageContext }) => {
-  console.log('pageContext', pageContext);
   const content = data.markdownRemark.frontmatter;
-  console.log(content);
   const authorPhoto = getImage(content.author_photo);
   return (
     <Layout>
