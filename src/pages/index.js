@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query IndexPage {
-    markdownRemark(id: { eq: "e7e6c875-d236-5b65-bbd2-70b03c6a8ea8" }) {
+    markdownRemark(frontmatter: { key: { eq: "index-page" } }) {
       frontmatter {
         author_photo {
           childImageSharp {

@@ -29,7 +29,7 @@ const AboutPage = ({ data, pageContext }) => {
 
 export const query = graphql`
   query AboutPage {
-    markdownRemark(id: { eq: "536e95aa-84a0-5b3f-ab3d-5f90d45bb449" }) {
+    markdownRemark(frontmatter: { key: { eq: "about-page" } }) {
       frontmatter {
         about
         author_photo {

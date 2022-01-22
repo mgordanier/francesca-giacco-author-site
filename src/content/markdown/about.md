@@ -1,4 +1,5 @@
 ---
+key: about-page
 title: About | Francesca Giacco
 meta_description: About the author.
 page_heading: About

@@ -1,4 +1,5 @@
 ---
+key: index-page
 title: Francesca Giacco
 meta_description: Official website of Francesca Giacco. Her debut novel, Six
   Days in Rome, will be published by Grand Central on May 3, 2022.
@@ -36,8 +37,8 @@ praise:
   - quote: '"Francesca Giacco is a stunning writer and *Six Days in Rome* is a
       brilliant transporting experience—a novel about belonging with heart and
       heat; a gorgeous and literary holiday."'
-    attribution: "—Lisa Taddeo, #1 New York Times bestselling author of *Three
-      Women* and *Animal*"
+    attribution: '—Lisa Taddeo, #1 New York Times bestselling author of *Three
+      Women* and *Animal*'
   - quote: “Sometimes it takes a three-thousand-year-old city to feel brand new.
       *Six Days in Rome* unfolds with all the crisp wonderment of a two-star
       hotel map. Sensorial as hell, it acknowledges the major landmarks and
@@ -46,11 +47,13 @@ praise:
       funky wine labels, good taste, and true inspiration, Francesca Giacco has
       penned a stunningly cool and stylish debut.”
     attribution: —Paul Beatty, Man Booker Prize winning author of *The Sellout*
-  - quote: "\"If Sally Rooney and Frances Mayes co-wrote a novel in an Airbnb near
+  - quote:
+      '"If Sally Rooney and Frances Mayes co-wrote a novel in an Airbnb near
       the Spanish Steps, it might read something like *Six Days in Rome*. Smart,
-      keenly observed, and deeply felt, this is a book for anyone who's ever
-      journeyed abroad to find themselves.\""
-    attribution: —David Ebershoff, New York Times bestselling author of *The Danish
+      keenly observed, and deeply felt, this is a book for anyone who''s ever
+      journeyed abroad to find themselves."'
+    attribution:
+      —David Ebershoff, New York Times bestselling author of *The Danish
       Girl* and *The 19th Wife*
 author_photo: ../images/authorphoto2.jpg
 author_photo_alt_text: Author photo of Francesca Giacco.
