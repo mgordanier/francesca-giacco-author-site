@@ -1,5 +1,7 @@
 ---
-title: About
+title: About | Francesca Giacco
+meta_description: About the author.
+page_heading: About
 author_photo: ../images/authorphoto2.jpg
 author_photo_alt_text: Author photo of Francesca Giacco.
 about: >-
