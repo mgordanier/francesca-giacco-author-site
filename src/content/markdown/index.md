@@ -1,4 +1,7 @@
 ---
+title: Francesca Giacco
+meta_description: Official website of Francesca Giacco. Her debut novel, Six
+  Days in Rome, will be published by Grand Central on May 3, 2022.
 book_cover_image: ../images/giacco_sixdaysinrome_9781538706428_hc.jpg
 book_cover_alt_text: Six Days in Rome by Francesca Giacco
 book_pitch: In this decadent, deeply evocative novel, a young artist travels to
