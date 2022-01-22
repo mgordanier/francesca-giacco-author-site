@@ -7,7 +7,7 @@ import MarkdownContent from '../components/MarkdownContent';
 import * as styles from './index.module.scss';
 
 const IndexPage = ({ data }) => {
-  const content = data.allMarkdownRemark.nodes[0].frontmatter;
+  const content = data.markdownRemark.frontmatter;
   const bookCoverImage = getImage(content.book_cover_image);
   const authorPhoto = getImage(content.author_photo);
 
@@ -83,36 +83,35 @@ const IndexPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query LandingPage {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          praise {
-            attribution
-            quote
+  query IndexPage {
+    markdownRemark(id: { eq: "e7e6c875-d236-5b65-bbd2-70b03c6a8ea8" }) {
+      frontmatter {
+        author_photo {
+          childImageSharp {
+            gatsbyImageData
           }
-          buy_button {
-            vendor_link
-            vendor_name
-          }
-          author_photo {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          author_photo_alt_text
-          book_cover_alt_text
-          book_cover_image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          book_description
-          book_pitch
-          buy_heading
-          mini_about
-          title
         }
+        author_photo_alt_text
+        book_cover_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        book_cover_alt_text
+        book_description
+        book_pitch
+        buy_button {
+          vendor_link
+          vendor_name
+        }
+        buy_heading
+        meta_description
+        mini_about
+        praise {
+          attribution
+          quote
+        }
+        title
       }
     }
   }
