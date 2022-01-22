@@ -1,0 +1,17 @@
+@use '../global-styles/var';
+@use '../global-styles/mixin';
+
+.about-section {
+  @include mixin.light-theme;
+}
+
+.about-block {
+  @include mixin.central-column;
+  padding: 65px 0 65px 0;
+  @include mixin.flex-container;
+
+  .image {
+    @include mixin.flex-image;
+    margin: 0 50px 0 0;
+  }
+}
