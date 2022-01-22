@@ -3,10 +3,11 @@
 
 .about-section {
   @include mixin.light-theme;
+  @include mixin.central-column-section;
 }
 
 .about-block {
-  @include mixin.central-column;
+  @include mixin.central-column-block;
   padding: 65px 0 65px 0;
   @include mixin.flex-container;
 

@@ -58,7 +58,17 @@
   }
 }
 
-@mixin central-column {
+/*
+To create a section with a central column:
+  1. apply central-column-section mixin to the section element
+  2. apply central-column-block mixin to a div that is a direct child of the section
+*/
+@mixin central-column-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin central-column-block {
   max-width: 1150px;
   margin: 0 140px;
 }

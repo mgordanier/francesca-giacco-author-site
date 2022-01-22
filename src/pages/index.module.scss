@@ -3,10 +3,11 @@
 
 .book-intro-section {
   @include mixin.light-theme;
+  @include mixin.central-column-section;
 }
 
 .book-intro-block {
-  @include mixin.central-column;
+  @include mixin.central-column-block;
   padding: 90px 0 90px 0;
   @include mixin.flex-container(flex-start);
   flex-direction: row-reverse;
@@ -26,9 +27,10 @@
 
 .buy-section {
   @include mixin.dark-theme;
+  @include mixin.central-column-section;
 }
 .buy-block {
-  @include mixin.central-column;
+  @include mixin.central-column-block;
   padding: 90px 0 90px 0;
 
   .button-block {
@@ -55,9 +57,10 @@
 
 .mini-about-section {
   @include mixin.light-theme;
+  @include mixin.central-column-section;
 }
 .mini-about-block {
-  @include mixin.central-column;
+  @include mixin.central-column-block;
   @include mixin.flex-container;
 
   .text-block {
