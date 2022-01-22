@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Metas = ({ title }) => {
+const Metas = ({ title, description }) => {
   // defaults for meta options
   const pageTitle = title || 'Francesca Giacco';
 
@@ -9,6 +9,7 @@ const Metas = ({ title }) => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>{pageTitle}</title>
+      {description && <meta name="description" content={description} />}
       {/*
        * @license
        * MyFonts Webfont Build ID 666603
