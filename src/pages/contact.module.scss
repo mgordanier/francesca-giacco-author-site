@@ -1,0 +1,15 @@
+@use '../global-styles/var';
+@use '../global-styles/mixin';
+
+.contact-section {
+  @include mixin.light-theme;
+}
+
+.contact-block {
+  @include mixin.central-column-block;
+  padding: 7rem 0 7rem 0;
+}
+
+.contact {
+  margin: 0 0 0 2rem;
+}

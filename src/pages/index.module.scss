@@ -31,7 +31,7 @@
 }
 .buy-block {
   @include mixin.central-column-block;
-  padding: 90px 0 90px 0;
+  padding: 8rem 0 7rem 0;
 
   .button-block {
     @include mixin.flex-container;

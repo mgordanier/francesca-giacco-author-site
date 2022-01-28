@@ -2,16 +2,23 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import MarkdownContent from '../components/MarkdownContent';
+import * as styles from './contact.module.scss';
 
 const ContactPage = ({ data }) => {
   const content = data.markdownRemark.frontmatter;
   return (
     <Layout>
-      <section>
-        <div>
+      <section className={styles.contactSection}>
+        <div className={styles.contactBlock}>
           <h1>{content.page_heading}</h1>
           {content.contacts.map((contact) => {
-            return <MarkdownContent tag="div" content={contact} />;
+            return (
+              <MarkdownContent
+                tag="div"
+                content={contact}
+                className={styles.contact}
+              />
+            );
           })}
         </div>
       </section>

@@ -8,11 +8,11 @@
 
 .about-block {
   @include mixin.central-column-block;
-  padding: 65px 0 65px 0;
+  padding: 4.5rem 0 4.5rem 0;
   @include mixin.flex-container;
 
   .image {
     @include mixin.flex-image;
-    margin: 0 50px 0 0;
+    margin: 0 7rem 0 0;
   }
 }

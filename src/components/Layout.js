@@ -6,7 +6,7 @@ import * as styles from './Layout.module.scss';
 
 const Layout = ({ children, title }) => {
   return (
-    <div className="application">
+    <div className={styles.application}>
       <Metas title={title} />
       <Navbar />
       <main>{children}</main>

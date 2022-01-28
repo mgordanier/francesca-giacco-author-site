@@ -1,0 +1,15 @@
+@use '../global-styles/var';
+@use '../global-styles/mixin';
+
+.writing-section {
+  @include mixin.light-theme;
+}
+
+.writing-block {
+  @include mixin.central-column-block;
+  padding: 7rem 0 7rem 0;
+}
+
+.writing-link {
+  margin: 0 0 0 2rem;
+}

@@ -1,1 +1,6 @@
+@use '../global-styles/mixin';
 
+.application {
+  @include mixin.flex-container(left, space-between, column);
+  min-height: 100vh;
+}
