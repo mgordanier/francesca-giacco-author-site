@@ -13,13 +13,26 @@
 
 .logo-type {
   font-size: 30px;
+  color: var.$sky-white;
+  text-decoration: none;
 }
 
 .menu {
   display: flex;
   font-size: 18px;
 
-  li {
-    padding: 0 12px;
+  .link {
+    margin: 0 12px;
+    color: var.$sky-white;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid var.$sky-white;
+    }
+  }
+
+  .activeLink {
+    color: var.$sky-white;
+    border-bottom: 1px solid var.$sky-white;
   }
 }

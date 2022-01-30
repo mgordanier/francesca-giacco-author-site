@@ -1,14 +1,28 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import * as styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const linkNames = ['about', 'writing', 'contact'];
   return (
     <nav className={styles.navbar}>
-      <p className={styles.logoType}>Francesca Giacco</p>
+      <Link to="/" className={styles.logoType}>
+        Francesca Giacco
+      </Link>
       <ul className={styles.menu}>
-        <li>About</li>
-        <li>Writing</li>
-        <li>Contact</li>
+        {linkNames.map((name) => {
+          return (
+            <li>
+              <Link
+                to={'/' + name + '/'}
+                className={styles.link}
+                activeClassName={styles.activeLink}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
