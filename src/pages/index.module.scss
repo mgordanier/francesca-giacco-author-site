@@ -43,9 +43,9 @@
 
   .praise-block {
     @include mixin.flex-container(center, center, column);
+    margin: 0 125px;
 
     .praise {
-      width: 900px;
       padding: 0 0 50px 0;
     }
     .attribution {
