@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { IoChevronDownSharp } from '@react-icons/all-files/io5/IoChevronDownSharp';
+import useWindowWidth from '../hooks/useWindowWidth';
 import * as styles from './Navbar.module.scss';
 
 //if the vw is wide, show the menu items with a className for horizontal display
@@ -8,21 +10,12 @@ import * as styles from './Navbar.module.scss';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const screenWidth = useWindowWidth();
 
   const handleMenuToggle = () => {
     setNavbarOpen((prev) => !prev);
   };
-
-  useEffect(() => {
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', changeWidth);
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    };
-  }, []);
 
   const linkNames = ['about', 'writing', 'contact'];
   let showMenuIcon = false;
@@ -45,7 +38,7 @@ const Navbar = () => {
             onClick={handleMenuToggle}
             className={styles.menuIcon}
           >
-            {navbarOpen ? 'Close' : 'Open'}
+            {navbarOpen ? 'Close' : <IoChevronDownSharp />}
           </button>
         )}
         <div className={styles.menuItemsBlock}>
