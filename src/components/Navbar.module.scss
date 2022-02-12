@@ -4,13 +4,13 @@
 .navbar {
   @include mixin.dark-theme;
   @include mixin.flex-container;
-  height: 84px;
-  padding: 0 30px;
+  height: 110px;
+  padding: 0 40px;
   font-family: var.$font-display-reg;
 }
 
 .logo-type {
-  font-size: 30px;
+  font-size: 40px;
   color: var.$sky-white;
   text-decoration: none;
 }
@@ -19,7 +19,9 @@
   @include mixin.flex-container;
 
   @media screen and (max-width: 700px) {
-    @include mixin.flex-container(center, space-between, column);
+    @include mixin.flex-container(flex-end, space-between, column);
+    position: absolute;
+    right: 30px;
   }
 }
 
@@ -27,16 +29,16 @@
   @include mixin.flex-container;
 
   @media screen and (max-width: 700px) {
-    @include mixin.flex-container(center, space-between, column);
+    @include mixin.flex-container(flex-end, space-between, column);
   }
 }
 
 .menu-items {
   @include mixin.flex-container(center, space-between, row);
-  font-size: 18px;
+  font-size: 24px;
 
   @media screen and (max-width: 700px) {
-    @include mixin.flex-container(center, space-between, column);
+    @include mixin.flex-container(flex-end, space-between, column);
   }
 
   .link {
@@ -57,5 +59,6 @@
   .menu-icon {
     color: var.$sky-white;
     background-color: transparent;
+    margin: 0 12px;
   }
 }

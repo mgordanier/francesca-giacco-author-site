@@ -15,7 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/noto-sans": "^4.5.1",
+    "@fontsource/cantarell": "^4.5.1",
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
