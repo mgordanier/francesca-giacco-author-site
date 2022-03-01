@@ -8,6 +8,14 @@
     color: var.$warm-white;
     text-decoration: underline;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var.$sky-white;
+  }
 }
 
 @mixin light-theme {
@@ -17,6 +25,14 @@
   a {
     color: var.$interstellar-blue;
     text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var.$storm-grey;
   }
 }
 
