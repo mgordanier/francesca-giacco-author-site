@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
 export default function useWindowWidth() {
-  const windowInnerWidth = tyepof window !== 'undefined' ? window.innerWidth : 1500;
+  const windowInnerWidth =
+    typeof window !== 'undefined' ? window.innerWidth : 1500;
 
   const [screenWidth, setScreenWidth] = useState(windowInnerWidth);
 
