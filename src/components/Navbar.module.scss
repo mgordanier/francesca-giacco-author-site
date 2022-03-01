@@ -7,29 +7,42 @@
   height: 110px;
   padding: 0 40px;
   font-family: var.$font-display-reg;
+
+  @media screen and (max-width: 1000px) {
+    height: 85px;
+  }
+
+  @media screen and (max-width: 775px) {
+    height: 65px;
+    padding: 0 18px;
+  }
 }
 
 .logo-type {
   font-size: 40px;
   color: var.$sky-white;
   text-decoration: none;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 775px) {
+    font-size: 21px;
+  }
 }
 
 .menu-block {
   @include mixin.flex-container;
 
-  @media screen and (max-width: 700px) {
-    @include mixin.flex-container(flex-end, space-between, column);
+  @media screen and (max-width: 775px) {
+    @include mixin.flex-container(flex-start, space-between, column);
+    padding: 38px 38px;
     position: absolute;
-    right: 30px;
-  }
-}
-
-.menu-items-block {
-  @include mixin.flex-container;
-
-  @media screen and (max-width: 700px) {
-    @include mixin.flex-container(flex-end, space-between, column);
+    left: 0;
+    top: 65px;
+    width: 100vw;
+    background-color: var.$cool-grey;
   }
 }
 
@@ -37,28 +50,49 @@
   @include mixin.flex-container(center, space-between, row);
   font-size: 24px;
 
-  @media screen and (max-width: 700px) {
-    @include mixin.flex-container(flex-end, space-between, column);
+  @media screen and (max-width: 1000px) {
+    font-size: 20px;
   }
 
-  .link {
-    margin: 0 12px;
-    color: var.$sky-white;
-    text-decoration: none;
+  @media screen and (max-width: 775px) {
+    @include mixin.flex-container(flex-start, space-between, column);
+    font-size: 18px;
+    gap: 30px;
+  }
+}
 
-    &:hover {
-      border-bottom: 1px solid var.$sky-white;
+.link {
+  margin: 0 12px;
+  color: var.$sky-white;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid var.$sky-white;
+
+    @media screen and (max-width: 775px) {
+      border-color: var.$blue-black;
     }
   }
 
-  .activeLink {
-    color: var.$sky-white;
-    border-bottom: 1px solid var.$sky-white;
+  @media screen and (max-width: 775px) {
+    color: var.$blue-black;
+    margin: 0;
   }
+}
 
-  .menu-icon {
-    color: var.$sky-white;
-    background-color: transparent;
-    margin: 0 12px;
+.active-link {
+  border-bottom: 1px solid var.$sky-white;
+
+  @media screen and (max-width: 775px) {
+    border-color: var.$blue-black;
+  }
+}
+
+.menu-icon {
+  color: var.$sky-white;
+
+  svg {
+    width: 28px;
+    height: auto;
   }
 }

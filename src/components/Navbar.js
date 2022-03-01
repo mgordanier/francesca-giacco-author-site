@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { IoChevronDownSharp } from '@react-icons/all-files/io5/IoChevronDownSharp';
+import { IoCloseSharp } from '@react-icons/all-files/io5/IoCloseSharp';
 import useWindowWidth from '../hooks/useWindowWidth';
 import * as styles from './Navbar.module.scss';
 
@@ -21,7 +22,7 @@ const Navbar = () => {
   let showMenuIcon = false;
   let showMenuItems = true;
 
-  if (screenWidth < 700) {
+  if (screenWidth <= 775) {
     showMenuIcon = true;
     showMenuItems = navbarOpen ? true : false;
   }
@@ -31,36 +32,30 @@ const Navbar = () => {
       <Link to="/" className={styles.logoType}>
         Francesca Giacco
       </Link>
-      <div className={styles.menuBlock}>
-        {showMenuIcon && (
-          <button
-            type="button"
-            onClick={handleMenuToggle}
-            className={styles.menuIcon}
-          >
-            {navbarOpen ? 'Close' : <IoChevronDownSharp />}
-          </button>
-        )}
-        <div className={styles.menuItemsBlock}>
-          {showMenuItems && (
-            <ul className={styles.menuItems}>
-              {linkNames.map((name) => {
-                return (
-                  <li>
-                    <Link
-                      to={'/' + name + '/'}
-                      className={styles.link}
-                      activeClassName={styles.activeLink}
-                    >
-                      {name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+      {showMenuIcon && (
+        <button onClick={handleMenuToggle} className={styles.menuIcon}>
+          {navbarOpen ? <IoCloseSharp /> : <IoChevronDownSharp />}
+        </button>
+      )}
+      {showMenuItems && (
+        <div className={styles.menuBlock}>
+          <ul className={styles.menuItems}>
+            {linkNames.map((name) => {
+              return (
+                <li>
+                  <Link
+                    to={'/' + name + '/'}
+                    className={styles.link}
+                    activeClassName={styles.activeLink}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
