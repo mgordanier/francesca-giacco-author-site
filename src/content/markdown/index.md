@@ -15,16 +15,19 @@ book_description: >-
   and the beauty of Rome's wide piazzas and narrow streets color Emilia's
   dreamy, but weighty experience of the city. She considers the many facets of
   her life, drifting in and out of memory, following her train of thought
-  wherever it leads.
+  wherever it leads.\
 
+  \
 
-  While climbing a hill near Trastevere, she meets John, an American expat living a seemingly idyllic life. They are soon navigating an intriguing connection, one that brings pain they both hold into the light.
+  While climbing a hill near Trastevere, she meets John, an American expat living a seemingly idyllic life. They are soon navigating an intriguing connection, one that brings pain they both hold into the light.\
 
+   \
 
-  As their intimacy deepens, Emilia starts to see herself anew, both as a woman and as an artist. For the first time in her life, she confronts the ways in which she's been letting her father’s success as a musician overshadow her own. Forced to reckon with both her origins and the choices she's made, Emilia finds herself on a singular journey—and transformed in ways she never expected.
+  As their intimacy deepens, Emilia starts to see herself anew, both as a woman and as an artist. Forced to reckon with both her origins and the choices she's made, Emilia finds herself on a singular journey—and transformed in ways she never expected.\
 
+   \
 
-  Equal parts visceral and cerebral, *Six Days in Rome* is an ode to the Eternal City, a celebration of art and creativity, and a meditation on self-discovery.
+  Equal parts visceral and cerebral, *Six Days in Rome* is an ode to the Eternal City, a celebration of art and creativity, and a meditation on self-discovery.
 buy_heading: Pre-Order
 buy_button:
   - vendor_name: IndieBound
