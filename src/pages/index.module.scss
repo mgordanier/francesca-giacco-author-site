@@ -5,24 +5,44 @@
   @include mixin.light-theme;
   @include mixin.central-column-section;
 }
-
 .book-intro-block {
   @include mixin.central-column-block;
-  padding: 90px 0 90px 0;
+  padding: 80px 0;
   @include mixin.flex-container(flex-start);
   flex-direction: row-reverse;
+  gap: 100px;
 
-  .pitch {
-    font-weight: bold;
+  @media screen and (max-width: 1000px) {
+    padding: 60px 0;
+    gap: 60px;
   }
-  .text-block {
-    @include mixin.flex-text-block;
-    margin: 0 50px 0 0;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
   }
-  .image {
-    @include mixin.flex-image;
-    margin: 0 0 0 50px;
+  @media screen and (max-width: 775px) {
+    margin: 0 25px;
+    padding: 25px 0 45px 0;
+    gap: 15px;
   }
+}
+.book-cover-image {
+  @include mixin.flex-image;
+  flex-shrink: 1;
+
+  @media screen and (min-width: 901px) {
+    position: sticky;
+    top: 35px;
+  }
+}
+.pitch-text-block {
+  @include mixin.flex-text-block;
+  @media screen and (max-width: 775px) {
+    padding: 0 22px;
+  }
+}
+.pitch {
+  font-weight: bold;
 }
 
 .buy-section {
@@ -31,27 +51,75 @@
 }
 .buy-block {
   @include mixin.central-column-block;
-  padding: 8rem 0 7rem 0;
+  padding: 100px 0;
 
-  .button-block {
-    @include mixin.flex-container;
-    padding: 60px 80px 80px 80px;
+  @media screen and (max-width: 1000px) {
+    padding: 85px 0;
   }
-  .button {
-    @include mixin.button(light);
+  @media screen and (max-width: 850px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 775px) {
+    padding: 60px 0;
+  }
+}
+.buy-heading {
+  @include mixin.heading(medium);
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
+}
+.button-block {
+  @include mixin.flex-container;
+  gap: 30px;
+  padding: 60px 80px 80px 80px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 50px 60px 60px 60px;
   }
 
-  .praise-block {
-    @include mixin.flex-container(center, center, column);
-    margin: 0 125px;
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 550px) {
+    padding: 30px 0 40px 0;
+  }
+}
+.button {
+  @include mixin.button(light);
+}
 
-    .praise {
-      padding: 0 0 50px 0;
-    }
-    .attribution {
-      text-align: right;
-      font-weight: bold;
-    }
+.praise-block {
+  @include mixin.flex-container(center, center, column);
+  margin: 0 125px;
+  gap: 50px;
+
+  @media screen and (max-width: 1000px) {
+    gap: 35px;
+  }
+  @media screen and (max-width: 850px) {
+    margin: 0;
+    gap: 25px;
+  }
+  @media screen and (max-width: 775px) {
+    gap: 20px;
+  }
+}
+.praise {
+  // padding: 0 0 50px 0;
+  // @media screen and (max-width: 850px) {
+  //   padding: 0 0 25px 0;
+  // }
+  // @media screen and (max-width: 775px) {
+  //   padding: 0 0 20px 0;
+  // }
+}
+.attribution {
+  text-align: right;
+  font-weight: bold;
+
+  p {
+    font-size: 0.9em;
   }
 }
 
@@ -62,15 +130,18 @@
 .mini-about-block {
   @include mixin.central-column-block;
   @include mixin.flex-container;
+  gap: 100px;
 
-  .text-block {
-    @include mixin.flex-container(center, flex-start, column);
-    @include mixin.flex-text-block;
-    margin: 0 0 0 50px;
+  @media screen and (max-width: 775px) {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
   }
-
-  .image {
-    @include mixin.flex-image;
-    margin: 0 50px 0 0;
-  }
+}
+.about-image {
+  @include mixin.flex-image;
+}
+.about-text-block {
+  @include mixin.flex-container(center, flex-start, column);
+  @include mixin.flex-text-block;
 }

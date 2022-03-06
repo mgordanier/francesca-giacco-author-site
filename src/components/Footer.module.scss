@@ -2,5 +2,13 @@
 
 .footer {
   @include mixin.dark-theme;
-  height: 75px;
+  height: 70px;
+
+  @media screen and (max-width: 1000px) {
+    height: 60px;
+  }
+
+  @media screen and (max-width: 775px) {
+    height: 48px;
+  }
 }

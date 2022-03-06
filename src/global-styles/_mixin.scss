@@ -38,19 +38,34 @@
 
 @mixin heading($size: large) {
   font-family: var.$font-display-black;
-  @if ($size: large) {
+  @if $size == large {
     font-size: 84px;
-    margin: 15px;
-  }
-  @if ($size: medium) {
-    font-size: 60px;
-    margin: 10px;
-  }
-}
+    margin: 15px 0;
 
-@mixin header-med {
-  font-family: var.$font-display-black;
-  font-size: 60px;
+    @media screen and (max-width: 1000px) {
+      font-size: 70px;
+      margin: 13px 0;
+    }
+
+    @media screen and (max-width: 775px) {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+  }
+  @if $size == medium {
+    font-size: 60px;
+    margin: 6px 0;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 55px;
+      margin: 8px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 40px;
+      margin: 4px 0;
+    }
+  }
 }
 
 @mixin button($theme) {
@@ -64,6 +79,18 @@
   width: 225px;
   height: 60px;
   border-radius: 5px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 19px;
+    width: 225px;
+    height: 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 17px;
+    width: 165px;
+    height: 57px;
+  }
 
   @if $theme == light {
     background-color: var.$sky-white;
@@ -86,7 +113,14 @@ To create a section with a central column:
 }
 @mixin central-column-block {
   max-width: 1150px;
-  margin: 0 140px;
+  margin: 0 80px;
+
+  @media screen and (max-width: 775px) {
+    margin: 0 60px;
+  }
+  @media screen and (max-width: 500px) {
+    margin: 0 45px;
+  }
 }
 
 @mixin flex-container(
@@ -101,11 +135,15 @@ To create a section with a central column:
 }
 
 @mixin flex-text-block {
+  width: 100%;
   max-width: 575px;
-  flex-grow: 0;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 @mixin flex-image {
+  width: 100%;
   max-width: 475px;
-  flex-grow: 0;
+  min-width: 200px;
+  flex-shrink: 1;
 }

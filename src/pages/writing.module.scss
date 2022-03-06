@@ -3,13 +3,37 @@
 
 .writing-section {
   @include mixin.light-theme;
+
+  @media screen and (min-width: 1300px) {
+    @include mixin.central-column-section;
+  }
 }
 
 .writing-block {
   @include mixin.central-column-block;
-  padding: 7rem 0 7rem 0;
+  padding: 80px 0;
+
+  @media screen and (max-width: 1000px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 775px) {
+    padding: 50px 0;
+  }
+}
+
+.writing-heading {
+  @include mixin.heading(large);
+  @media screen and (max-width: 775px) {
+    margin: 0 0 15px 0;
+  }
 }
 
 .writing-link {
-  margin: 0 0 0 2rem;
+  margin: 0 32px;
+  @media screen and (max-width: 1000px) {
+    margin: 0 25px;
+  }
+  @media screen and (max-width: 775px) {
+    margin: 0 18px;
+  }
 }

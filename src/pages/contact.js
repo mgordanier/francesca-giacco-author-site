@@ -10,7 +10,7 @@ const ContactPage = ({ data }) => {
     <Layout>
       <section className={styles.contactSection}>
         <div className={styles.contactBlock}>
-          <h1>{content.page_heading}</h1>
+          <h1 className={styles.contactHeading}>{content.page_heading}</h1>
           {content.contacts.map((contact) => {
             return (
               <MarkdownContent

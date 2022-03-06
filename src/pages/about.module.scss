@@ -6,13 +6,42 @@
   @include mixin.central-column-section;
 }
 
+.about-heading {
+  @include mixin.heading(medium);
+  @media screen and (max-width: 775px) {
+    @include mixin.heading(large);
+    margin: 0 0 15px 0;
+  }
+}
+
 .about-block {
   @include mixin.central-column-block;
-  padding: 4.5rem 0 4.5rem 0;
+  padding: 75px 0;
   @include mixin.flex-container;
+  gap: 110px;
 
-  .image {
-    @include mixin.flex-image;
-    margin: 0 7rem 0 0;
+  @media screen and (max-width: 1200px) {
+    gap: 90px;
+  }
+  @media screen and (max-width: 1000px) {
+    gap: 90px;
+  }
+  @media screen and (max-width: 775px) {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 40px 0;
+  }
+}
+.about-image {
+  @include mixin.flex-image;
+  flex-shrink: 0.75;
+  @media screen and (max-width: 775px) {
+    padding: 0 5px;
+  }
+}
+.about-text {
+  @media screen and (max-width: 775px) {
+    max-width: 475px;
+    margin: 0 13px;
   }
 }

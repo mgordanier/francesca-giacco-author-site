@@ -15,14 +15,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <section className={styles.bookIntroSection}>
         <div className={styles.bookIntroBlock}>
-          <h1>
+          <h1 className={styles.bookCoverImage}>
             <GatsbyImage
               image={bookCoverImage}
               alt={content.book_cover_alt_text}
-              className={styles.image}
             />
           </h1>
-          <div className={styles.textBlock}>
+          <div className={styles.pitchTextBlock}>
             <MarkdownContent
               tag="div"
               className={styles.pitch}
@@ -34,7 +33,7 @@ const IndexPage = ({ data }) => {
       </section>
       <section className={styles.buySection}>
         <div className={styles.buyBlock}>
-          <h2>{content.buy_heading}</h2>
+          <h2 className={styles.buyHeading}>{content.buy_heading}</h2>
           <div className={styles.buttonBlock}>
             {content.buy_button.map((button) => {
               return (
@@ -66,15 +65,16 @@ const IndexPage = ({ data }) => {
       </section>
       <section className={styles.miniAboutSection}>
         <div className={styles.miniAboutBlock}>
-          <GatsbyImage
-            image={authorPhoto}
-            alt={content.author_photo_alt_text}
-            className={styles.image}
-          />
+          <div className={styles.aboutImage}>
+            <GatsbyImage
+              image={authorPhoto}
+              alt={content.author_photo_alt_text}
+            />
+          </div>
           <MarkdownContent
             tag="div"
             content={content.mini_about}
-            className={styles.textBlock}
+            className={styles.aboutTextBlock}
           />
         </div>
       </section>

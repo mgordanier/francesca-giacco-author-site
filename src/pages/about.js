@@ -12,14 +12,19 @@ const AboutPage = ({ data, pageContext }) => {
     <Layout>
       <section className={styles.aboutSection}>
         <div className={styles.aboutBlock}>
-          <GatsbyImage
-            image={authorPhoto}
-            alt={content.author_photo_alt_text}
-            className={styles.image}
-          />
+          <div className={styles.aboutImage}>
+            <GatsbyImage
+              image={authorPhoto}
+              alt={content.author_photo_alt_text}
+            />
+          </div>
           <div>
-            <h1>{content.page_heading}</h1>
-            <MarkdownContent tag="div" content={content.about} />
+            <h1 className={styles.aboutHeading}>{content.page_heading}</h1>
+            <MarkdownContent
+              tag="div"
+              content={content.about}
+              className={styles.aboutText}
+            />
           </div>
         </div>
       </section>

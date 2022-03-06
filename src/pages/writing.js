@@ -10,7 +10,7 @@ const WritingPage = ({ data }) => {
     <Layout>
       <section className={styles.writingSection}>
         <div className={styles.writingBlock}>
-          <h1>{content.page_heading}</h1>
+          <h1 className={styles.writingHeading}>{content.page_heading}</h1>
           {content.writing_links.map((writingLink) => {
             return (
               <MarkdownContent
