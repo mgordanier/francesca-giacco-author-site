@@ -29,8 +29,8 @@ buy_heading: Pre-Order
 buy_button:
   - vendor_name: IndieBound
     vendor_link: https://www.indiebound.org/book/9781538706428
-  - vendor_name: Amazon
-    vendor_link: https://www.amazon.com/gp/product/1538706423?tag=hacboogrosit-20
+  - vendor_name: Bookshop
+    vendor_link: https://bookshop.org/books/six-days-in-rome/9781538706428
   - vendor_name: More Options
     vendor_link: https://www.hachettebookgroup.com/titles/francesca-giacco/six-days-in-rome/9781538706428/
 praise:
