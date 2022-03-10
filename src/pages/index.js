@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => {
           <div className={styles.praiseBlock}>
             {content.praise.map((praise) => {
               return (
-                <figure key={uuidv4()} className={styles.praise}>
+                <figure key={uuidv4()}>
                   <MarkdownContent tag="blockquote" content={praise.quote} />
                   <MarkdownContent
                     tag="figcaption"
