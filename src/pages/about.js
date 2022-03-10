@@ -17,6 +17,7 @@ const AboutPage = ({ data, pageContext }) => {
               image={authorPhoto}
               alt={content.author_photo_alt_text}
             />
+            <MarkdownContent tag="div" content={content.author_photo_credit} />
           </div>
           <div>
             <h1 className={styles.aboutHeading}>{content.page_heading}</h1>
@@ -43,6 +44,7 @@ export const query = graphql`
           }
         }
         author_photo_alt_text
+        author_photo_credit
         meta_description
         page_heading
         title

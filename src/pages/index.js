@@ -70,6 +70,7 @@ const IndexPage = ({ data }) => {
               image={authorPhoto}
               alt={content.author_photo_alt_text}
             />
+            <MarkdownContent tag="div" content={content.author_photo_credit} />
           </div>
           <MarkdownContent
             tag="div"
@@ -92,6 +93,7 @@ export const query = graphql`
           }
         }
         author_photo_alt_text
+        author_photo_credit
         book_cover_image {
           childImageSharp {
             gatsbyImageData
