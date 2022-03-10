@@ -9,7 +9,7 @@
 .about-heading {
   @include mixin.heading(medium);
   @media screen and (max-width: 775px) {
-    @include mixin.heading(large);
+    font-size: 48px;
     margin: 0 0 15px 0;
   }
 }
@@ -28,7 +28,9 @@
   }
   @media screen and (max-width: 775px) {
     flex-direction: column-reverse;
-    gap: 30px;
+    //gap is applied using a margin on the about-text on mobile
+    //because safari does not support gap with column-reverse
+    gap: 0;
     padding: 40px 0;
   }
 }
@@ -51,6 +53,6 @@
 .about-text {
   @media screen and (max-width: 775px) {
     max-width: 475px;
-    margin: 0 13px;
+    margin: 0 13px 30px 13px;
   }
 }
