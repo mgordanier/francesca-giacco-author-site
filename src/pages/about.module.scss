@@ -35,9 +35,18 @@
 .about-image {
   @include mixin.flex-image;
   flex-shrink: 0.75;
+  position: relative;
   @media screen and (max-width: 775px) {
     padding: 0 5px;
   }
+}
+.about-image-credit p {
+  font-size: 0.65em;
+  line-height: 1em;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 2px;
+  color: var.$warm-white;
 }
 .about-text {
   @media screen and (max-width: 775px) {

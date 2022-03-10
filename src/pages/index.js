@@ -70,7 +70,11 @@ const IndexPage = ({ data }) => {
               image={authorPhoto}
               alt={content.author_photo_alt_text}
             />
-            <MarkdownContent tag="div" content={content.author_photo_credit} />
+            <MarkdownContent
+              tag="div"
+              content={content.author_photo_credit}
+              className={styles.aboutImageCredit}
+            />
           </div>
           <MarkdownContent
             tag="div"

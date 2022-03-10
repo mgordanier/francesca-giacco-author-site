@@ -17,7 +17,11 @@ const AboutPage = ({ data, pageContext }) => {
               image={authorPhoto}
               alt={content.author_photo_alt_text}
             />
-            <MarkdownContent tag="div" content={content.author_photo_credit} />
+            <MarkdownContent
+              tag="div"
+              content={content.author_photo_credit}
+              className={styles.aboutImageCredit}
+            />
           </div>
           <div>
             <h1 className={styles.aboutHeading}>{content.page_heading}</h1>

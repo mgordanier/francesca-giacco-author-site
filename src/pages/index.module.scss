@@ -131,6 +131,15 @@
 }
 .about-image {
   @include mixin.flex-image;
+  position: relative;
+}
+.about-image-credit p {
+  font-size: 0.65em;
+  line-height: 1em;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 2px;
+  color: var.$warm-white;
 }
 .about-text-block {
   @include mixin.flex-container(center, flex-start, column);
