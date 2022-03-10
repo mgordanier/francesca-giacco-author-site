@@ -9,5 +9,5 @@ contacts:
   - For *Six Days in Rome* requests, please contact [Kamrun
     Nesa](mailto:Kamrun.Nesa@hbgusa.com).
   - For all other inquiries, please contact [Susan
-    Golomb](mailto:sgolomb@writershouse.com)
+    Golomb](mailto:sgolomb@writershouse.com).
 ---
