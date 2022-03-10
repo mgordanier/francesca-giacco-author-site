@@ -79,6 +79,11 @@ collections:
               widget: string,
             }
           - {
+              label: 'Author Photo Credit',
+              name: author_photo_credit,
+              widget: string,
+            }
+          - {
               label: 'Mini About the Author',
               name: mini_about,
               widget: markdown,
@@ -106,6 +111,11 @@ collections:
           - {
               label: 'Author Photo Alt Text',
               name: author_photo_alt_text,
+              widget: string,
+            }
+          - {
+              label: 'Author Photo Credit',
+              name: author_photo_credit,
               widget: string,
             }
           - { label: 'About the Author', name: about, widget: markdown }
