@@ -6,6 +6,7 @@ const Metas = ({
   title = 'Francesca Giacco',
   description = 'Francesca Giacco is a graduate of Barnard College and the MFA program at Columbia University. Her debut novel, Six Days in Rome, is being published by Grand Central.',
   image = bookCover,
+  imageAlt = 'Book cover for the novel Six Days in Rome by Francesca Giacco.',
 }) => {
   // defaults for meta options
 
@@ -13,10 +14,12 @@ const Metas = ({
     <Helmet>
       <meta charSet="utf-8" />
       <title>{title}</title>
-      {description && <meta name="description" content={description} />}
-      {description && <meta name="og:description" content={description} />}
-      {image && <meta name="og:image" content={image} />}
-
+      <meta name="og:title" content={title} />
+      <meta name="og:type" content="website" />
+      <meta name="description" content={description} />
+      <meta name="og:description" content={description} />
+      <meta name="og:image" content={image} />
+      <meta name="og:image:alt" content={imageAlt} />
       {/*
        * @license
        * MyFonts Webfont Build ID 666603
