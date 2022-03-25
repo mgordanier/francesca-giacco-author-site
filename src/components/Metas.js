@@ -1,15 +1,22 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
+import bookCover from '../content/images/giacco_sixdaysinrome_9781538706428_hc.jpg';
 
-const Metas = ({ title, description }) => {
+const Metas = ({
+  title = 'Francesca Giacco',
+  description = 'Francesca Giacco is a graduate of Barnard College and the MFA program at Columbia University. Her debut novel, Six Days in Rome, is being published by Grand Central.',
+  image = bookCover,
+}) => {
   // defaults for meta options
-  const pageTitle = title || 'Francesca Giacco';
 
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{pageTitle}</title>
+      <title>{title}</title>
       {description && <meta name="description" content={description} />}
+      {description && <meta name="og:description" content={description} />}
+      {image && <meta name="og:image" content={image} />}
+
       {/*
        * @license
        * MyFonts Webfont Build ID 666603
