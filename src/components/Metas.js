@@ -4,7 +4,7 @@ import bookCover from '../content/images/giacco_sixdaysinrome_9781538706428_hc.j
 
 const Metas = ({
   title = 'Francesca Giacco',
-  description = 'Francesca Giacco is a graduate of Barnard College and the MFA program at Columbia University. Her debut novel, Six Days in Rome, is being published by Grand Central.',
+  description = 'Francesca Giacco is a graduate of Barnard College and the MFA program at Columbia University. She lives in New York. Six Days in Rome is her first novel.',
   image = bookCover,
   imageAlt = 'Book cover for the novel Six Days in Rome by Francesca Giacco.',
 }) => {
