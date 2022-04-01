@@ -53,7 +53,7 @@ praise:
       journeyed abroad to find themselves.\""
     attribution: —David Ebershoff, New York Times bestselling author of *The Danish
       Girl* and *The 19th Wife*
-author_photo: ../images/authorphoto2.jpg
+author_photo: ../images/220313_francescagiacco_kcoutts_01_128aaaa-v2.tiff
 author_photo_alt_text: Author photo of Francesca Giacco.
 author_photo_credit: © Emily Knecht
 mini_about: Francesca Giacco is a graduate of Barnard College and the MFA
