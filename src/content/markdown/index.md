@@ -18,7 +18,7 @@ book_description: >-
   wherever it leads.
 
 
-  While climbing a hill near Trastevere, she meets John, an American expat living a seemingly idyllic life. They are soon navigating an intriguing connection, one that brings pain they both hold into the light.
+  While climbing a hill near Trastevere, she meets John, an American expat living a seemingly idyllic life. They are soon navigating an intriguing connection, one that brings pain they both hold to the surface.
 
 
   As their intimacy deepens, Emilia starts to see herself anew, both as a woman and as an artist. Forced to reckon with both her origins and the choices she's made, Emilia finds herself on a singular journey—and transformed in ways she never expected.
