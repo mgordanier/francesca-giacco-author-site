@@ -174,3 +174,35 @@ collections:
               min: 1,
               field: { label: 'Contact', name: contact, widget: markdown },
             }
+      - file: 'src/content/markdown/events.md'
+        label: 'Events Page'
+        name: 'events'
+        fields:
+          - { label: 'Key', name: key, widget: hidden, default: 'events-page' }
+          - {
+              label: 'Title',
+              name: title,
+              widget: string,
+              default: 'Events | Francesca Giacco',
+              hint: 'This title will be used in the page metadata only.',
+            }
+          - {
+              label: 'Meta Description',
+              name: meta_description,
+              widget: text,
+              hint: 'This description will be used in the page metadata only.',
+            }
+          - { label: 'Page Heading', name: page_heading, widget: string }
+          - {
+              label: 'Event Listings',
+              name: event-listings,
+              widget: list,
+              allow_add: true,
+              min: 1,
+              field:
+                {
+                  label: 'Event Listing',
+                  name: event-listing,
+                  widget: markdown,
+                },
+            }
