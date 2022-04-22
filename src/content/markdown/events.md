@@ -4,13 +4,5 @@ title: Events | Francesca Giacco
 meta_description: Upcoming book events and readings.
 page_heading: Events
 event_listings:
-  - '**Day, Date** | time  
-  
-    Event Name  
-    
-    Location Name  
-    
-    Location Address  
-    
-    [Link]()'
+  - ''
 ---
