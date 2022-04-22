@@ -2,14 +2,17 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
+import Metas from '../components/Metas';
 import MarkdownContent from '../components/MarkdownContent';
 import * as styles from './about.module.scss';
 
 const AboutPage = ({ data, pageContext }) => {
   const content = data.markdownRemark.frontmatter;
   const authorPhoto = getImage(content.author_photo);
+
   return (
     <Layout>
+      <Metas title={content.title} description={content.meta_description} />
       <section className={styles.aboutSection}>
         <div className={styles.aboutBlock}>
           <div className={styles.aboutImage}>

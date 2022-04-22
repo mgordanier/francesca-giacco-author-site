@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Metas from '../components/Metas';
 import MarkdownContent from '../components/MarkdownContent';
 import * as styles from './writing.module.scss';
 
@@ -8,6 +9,7 @@ const WritingPage = ({ data }) => {
   const content = data.markdownRemark.frontmatter;
   return (
     <Layout>
+      <Metas title={content.title} description={content.meta_description} />
       <section className={styles.writingSection}>
         <div className={styles.writingBlock}>
           <h1 className={styles.writingHeading}>{content.page_heading}</h1>

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { v4 as uuidv4 } from 'uuid';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
+import Metas from '../components/Metas';
 import MarkdownContent from '../components/MarkdownContent';
 import * as styles from './index.module.scss';
 
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Metas title={content.title} description={content.meta_description} />
       <section className={styles.bookIntroSection}>
         <div className={styles.bookIntroBlock}>
           <h1 className={styles.bookCoverImage}>
