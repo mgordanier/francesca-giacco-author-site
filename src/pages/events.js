@@ -14,6 +14,7 @@ const EventsPage = ({ data }) => {
         <div className={styles.eventsBlock}>
           <h1 className={styles.eventsHeading}>{content.page_heading}</h1>
           {content.event_listings.map((eventListing) => {
+            console.log(eventListing);
             return (
               <MarkdownContent
                 tag="div"

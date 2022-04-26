@@ -195,14 +195,14 @@ collections:
           - { label: 'Page Heading', name: page_heading, widget: string }
           - {
               label: 'Event Listings',
-              name: event-listings,
+              name: event_listings,
               widget: list,
               allow_add: true,
               min: 1,
               field:
                 {
                   label: 'Event Listing',
-                  name: event-listing,
+                  name: event_listing,
                   widget: markdown,
                 },
             }
@@ -227,10 +227,10 @@ collections:
           - { label: 'Page Heading', name: page_heading, widget: string }
           - {
               label: 'Press Links',
-              name: press-links,
+              name: press_links,
               widget: list,
               allow_add: true,
               min: 1,
               field:
-                { label: 'Press Link', name: press-link, widget: markdown },
+                { label: 'Press Link', name: press_link, widget: markdown },
             }
