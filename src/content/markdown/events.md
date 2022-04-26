@@ -16,4 +16,6 @@ event-listings:
     est-beach-reads-2022/)[McNally Jackson (in-person launch
     event)](https://www.mcnallyjackson.com/event/book-launch-francesca-giacco-p\
     resents-six-days-rome-jordan-kisner)"
+  - "**May 11 - Hockessin, DE** | Hockessin BookShelf (in-person event)"
+  - "**June 1 - Los Angeles, CA** | Chevalier's Books (in-person event)"
 ---
