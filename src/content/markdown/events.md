@@ -12,4 +12,6 @@ event_listings:
     presents-six-days-rome-jordan-kisner) (in-person launch event)"
   - "**May 11 - Hockessin, DE** | Hockessin BookShelf (in-person event)"
   - "**June 1 - Los Angeles, CA** | Chevalier's Books (in-person event)"
+  - "**June 13** - **Brooklyn, NY** | Franklin Park reading series (in-person
+    event)"
 ---
