@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { v4 as uuidv4 } from 'uuid';
 import Layout from '../components/Layout';
 import Metas from '../components/Metas';
 import MarkdownContent from '../components/MarkdownContent';
@@ -16,6 +17,7 @@ const ContactPage = ({ data }) => {
           {content.contacts.map((contact) => {
             return (
               <MarkdownContent
+                key={uuidv4()}
                 tag="div"
                 content={contact}
                 className={styles.contact}

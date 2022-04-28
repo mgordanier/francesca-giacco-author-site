@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { v4 as uuidv4 } from 'uuid';
 import Layout from '../components/Layout';
 import Metas from '../components/Metas';
 import MarkdownContent from '../components/MarkdownContent';
@@ -14,10 +15,11 @@ const EventsPage = ({ data }) => {
         <div className={styles.eventsBlock}>
           <h1 className={styles.eventsHeading}>{content.page_heading}</h1>
           {content.event_listings.map((eventListing) => {
-            console.log(eventListing);
             return (
               <MarkdownContent
+                key={uuidv4()}
                 tag="div"
+                gst
                 content={eventListing}
                 className={styles.eventListing}
               />

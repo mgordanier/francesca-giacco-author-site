@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { v4 as uuidv4 } from 'uuid';
 import { IoChevronDownSharp } from '@react-icons/all-files/io5/IoChevronDownSharp';
 import { IoCloseSharp } from '@react-icons/all-files/io5/IoCloseSharp';
 import useWindowWidth from '../hooks/useWindowWidth';
@@ -42,7 +43,7 @@ const Navbar = () => {
           <ul className={styles.menuItems}>
             {linkNames.map((name) => {
               return (
-                <li>
+                <li key={uuidv4()}>
                   <Link
                     to={'/' + name + '/'}
                     className={styles.link}
