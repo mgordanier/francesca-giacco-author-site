@@ -13,7 +13,7 @@
   @include mixin.central-column-block;
   padding: 80px 0;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     padding: 60px 0;
   }
   @media screen and (max-width: 775px) {
@@ -30,7 +30,7 @@
 
 .writing-link {
   margin: 0 32px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     margin: 0 25px;
   }
   @media screen and (max-width: 775px) {

@@ -10,7 +10,7 @@
   position: relative;
   z-index: 1;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     height: 85px;
   }
 
@@ -28,7 +28,7 @@
   color: var.$sky-white;
   text-decoration: none;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     font-size: 30px;
   }
 
@@ -40,14 +40,19 @@
 .menu-block {
   @include mixin.flex-container;
 
-  @media screen and (max-width: 775px) {
+  @media screen and (max-width: 900px) {
     @include mixin.flex-container(flex-start, space-between, column);
-    padding: 38px 38px;
+    padding: 38px 65px;
     position: absolute;
     left: 0;
-    top: 65px;
+    top: 85px;
     width: 100vw;
     background-color: var.$cool-grey;
+  }
+
+  @media screen and (max-width: 775px) {
+    top: 65px;
+    padding: 38px;
   }
 }
 
@@ -55,14 +60,17 @@
   @include mixin.flex-container(center, space-between, row);
   font-size: 24px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     font-size: 20px;
   }
 
-  @media screen and (max-width: 775px) {
+  @media screen and (max-width: 900px) {
     @include mixin.flex-container(flex-start, space-between, column);
-    font-size: 18px;
     gap: 30px;
+  }
+
+  @media screen and (max-width: 775px) {
+    font-size: 18px;
   }
 }
 
@@ -74,12 +82,12 @@
   &:hover {
     border-bottom: 1px solid var.$sky-white;
 
-    @media screen and (max-width: 775px) {
+    @media screen and (max-width: 900px) {
       border-color: var.$blue-black;
     }
   }
 
-  @media screen and (max-width: 775px) {
+  @media screen and (max-width: 900px) {
     color: var.$blue-black;
     margin: 0;
   }
@@ -88,7 +96,7 @@
 .active-link {
   border-bottom: 1px solid var.$sky-white;
 
-  @media screen and (max-width: 775px) {
+  @media screen and (max-width: 900px) {
     border-color: var.$blue-black;
   }
 }

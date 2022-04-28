@@ -18,11 +18,11 @@ const Navbar = () => {
     setNavbarOpen((prev) => !prev);
   };
 
-  const linkNames = ['about', 'writing', 'contact'];
+  const linkNames = ['about', 'writing', 'events', 'press', 'contact'];
   let showMenuIcon = false;
   let showMenuItems = true;
 
-  if (screenWidth <= 775) {
+  if (screenWidth <= 900) {
     showMenuIcon = true;
     showMenuItems = navbarOpen ? true : false;
   }
