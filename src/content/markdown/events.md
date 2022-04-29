@@ -10,7 +10,9 @@ event_listings:
   - "**May 5** - **New York, NY** | [McNally
     Jackson](https://www.mcnallyjackson.com/event/book-launch-francesca-giacco-\
     presents-six-days-rome-jordan-kisner) (in-person launch event)"
-  - "**May 11 - Hockessin, DE** | Hockessin BookShelf (in-person event)"
+  - "**May 11 - Hockessin, DE** | [Hockessin
+    BookShelf](https://www.facebook.com/events/2984727015173415) (in-person
+    event)"
   - "**June 1 - Los Angeles, CA** | Chevalier's Books (in-person event)"
   - "**June 13** - **Brooklyn, NY** | Franklin Park reading series (in-person
     event)"
