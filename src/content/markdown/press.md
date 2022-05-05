@@ -4,6 +4,10 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - '**BOMB** |
+    [](https://bombmagazine.org/articles/francesca-giacco-interviewed/)[](https://bombmagazine.org/articles/francesca-giacco-interviewed/)[Interview:
+    "The Incredibly Beautiful in the
+    Everyday"](https://bombmagazine.org/articles/francesca-giacco-interviewed/)'
   - "**Debutiful** |
     [](https://lithub.com/the-weaponization-of-quiet-on-the-subtle-horror-of-ay\
     segul-savass-white-on-white/)[](https://www.publishersweekly.com/9781538706\
