@@ -4,6 +4,12 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Largehearted Boy** |
+    [](https://lithub.com/the-weaponization-of-quiet-on-the-subtle-horror-of-ay\
+    segul-savass-white-on-white/)[](https://www.publishersweekly.com/9781538706\
+    428)[Six Days in Rome
+    playlist](http://www.largeheartedboy.com/blog/archive/2022/05/francesca_gia\
+    cc.html)"
   - '**BOMB** |
     [](https://bombmagazine.org/articles/francesca-giacco-interviewed/)[](https://bombmagazine.org/articles/francesca-giacco-interviewed/)[Interview:
     "The Incredibly Beautiful in the
