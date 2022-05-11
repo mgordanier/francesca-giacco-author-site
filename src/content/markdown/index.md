@@ -24,7 +24,7 @@ book_description: >-
 
 
   Equal parts visceral and cerebral, *Six Days in Rome* is an ode to the Eternal City, a celebration of art and creativity, and a meditation on self-discovery.
-buy_heading: Pre-Order
+buy_heading: Order
 buy_button:
   - vendor_name: IndieBound
     vendor_link: https://www.indiebound.org/book/9781538706428
