@@ -4,6 +4,10 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Air Mail** |
+    [](https://lithub.com/the-weaponization-of-quiet-on-the-subtle-horror-of-ay\
+    segul-savass-white-on-white/)[Review](https://airmail.news/issues/2022-5-14\
+    /six-days-in-rome)"
   - "**Southern Living** | [Beach Reads Perfect for Summer
     2022](https://www.southernliving.com/holidays-occasions/summer/best-beach-r\
     eads?slide=1361b968-f0db-4a5d-89f2-2e16af3ce3b7#1361b968-f0db-4a5d-89f2-2e1\
