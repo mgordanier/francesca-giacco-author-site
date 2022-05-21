@@ -4,6 +4,8 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Glamour** | [10 Best Books to Read in
+    May](https://www.glamour.com/gallery/the-10-best-books-to-read-in-may)"
   - "**Air Mail** |
     [](https://lithub.com/the-weaponization-of-quiet-on-the-subtle-horror-of-ay\
     segul-savass-white-on-white/)[Review](https://airmail.news/issues/2022-5-14\
