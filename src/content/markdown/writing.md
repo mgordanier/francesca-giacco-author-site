@@ -4,6 +4,11 @@ title: Writing | Francesca Giacco
 meta_description: A selection of writing.
 page_heading: Writing
 writing-links:
+  - "[](https://www.writersdigest.com/write-better-fiction/shame-and-success-bl\
+    ending-artistic-expression-with-social-media)**Literary Hub** | [How Did a
+    Fictionalized Leonard Cohen End Up in My
+    Novel?](https://lithub.com/how-did-a-fictionalized-leonard-cohen-end-up-in-\
+    my-novel/)"
   - "**Writer's Digest** | [Shame and Success: Blending Artistic Expression With
     Social
     Media](https://www.writersdigest.com/write-better-fiction/shame-and-success\
