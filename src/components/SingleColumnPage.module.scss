@@ -1,7 +1,7 @@
 @use '../global-styles/var';
 @use '../global-styles/mixin';
 
-.events-section {
+.section {
   @include mixin.light-theme;
 
   @media screen and (min-width: 1300px) {
@@ -9,7 +9,7 @@
   }
 }
 
-.events-block {
+.block {
   @include mixin.central-column-block;
   padding: 80px 0;
 
@@ -21,14 +21,14 @@
   }
 }
 
-.events-heading {
+.heading {
   @include mixin.heading(large);
   @media screen and (max-width: 775px) {
     margin: 0 0 15px 0;
   }
 }
 
-.event-listing {
+.content-item {
   margin: 0 32px;
   @media screen and (max-width: 1100px) {
     margin: 0 25px;

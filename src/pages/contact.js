@@ -1,32 +1,18 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { v4 as uuidv4 } from 'uuid';
-import Layout from '../components/Layout';
-import Metas from '../components/Metas';
-import MarkdownContent from '../components/MarkdownContent';
-import * as styles from './contact.module.scss';
+import SingleColumnPage from '../components/SingleColumnPage';
 
 const ContactPage = ({ data }) => {
-  const content = data.markdownRemark.frontmatter;
+  const { page_heading, contacts, title, meta_description } =
+    data.markdownRemark.frontmatter;
+
   return (
-    <Layout>
-      <Metas title={content.title} description={content.meta_description} />
-      <section className={styles.contactSection}>
-        <div className={styles.contactBlock}>
-          <h1 className={styles.contactHeading}>{content.page_heading}</h1>
-          {content.contacts.map((contact) => {
-            return (
-              <MarkdownContent
-                key={uuidv4()}
-                tag="div"
-                content={contact}
-                className={styles.contact}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </Layout>
+    <SingleColumnPage
+      pageHeading={page_heading}
+      markdownArray={contacts}
+      metaTitle={title}
+      metaDescription={meta_description}
+    />
   );
 };
 

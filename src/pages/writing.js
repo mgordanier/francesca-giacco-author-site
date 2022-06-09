@@ -1,32 +1,17 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { v4 as uuidv4 } from 'uuid';
-import Layout from '../components/Layout';
-import Metas from '../components/Metas';
-import MarkdownContent from '../components/MarkdownContent';
-import * as styles from './writing.module.scss';
+import SingleColumnPage from '../components/SingleColumnPage';
 
 const WritingPage = ({ data }) => {
-  const content = data.markdownRemark.frontmatter;
+  const { page_heading, writing_links, title, meta_description } =
+    data.markdownRemark.frontmatter;
   return (
-    <Layout>
-      <Metas title={content.title} description={content.meta_description} />
-      <section className={styles.writingSection}>
-        <div className={styles.writingBlock}>
-          <h1 className={styles.writingHeading}>{content.page_heading}</h1>
-          {content.writing_links.map((writingLink) => {
-            return (
-              <MarkdownContent
-                key={uuidv4()}
-                tag="div"
-                content={writingLink}
-                className={styles.writingLink}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </Layout>
+    <SingleColumnPage
+      pageHeading={page_heading}
+      markdownArray={writing_links}
+      metaTitle={title}
+      metaDescription={meta_description}
+    />
   );
 };
 
