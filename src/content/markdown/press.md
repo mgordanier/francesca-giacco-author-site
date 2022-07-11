@@ -4,6 +4,8 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Ordinary Habit** |
+    [Interview](https://ordinaryhabit.com/blogs/stories/francesca-giacco)"
   - "**Slow Stories podcast** | [Reading](https://apple.co/3MO8W7a)"
   - "**Glamour** | [10 Best Books to Read in
     May](https://www.glamour.com/gallery/the-10-best-books-to-read-in-may)"
