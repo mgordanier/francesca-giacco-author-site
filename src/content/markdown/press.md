@@ -4,6 +4,8 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Booklist** |
+    [Review](https://www.booklistonline.com/Six-Days-in-Rome/pid=9760796)"
   - "**Ordinary Habit** |
     [Interview](https://ordinaryhabit.com/blogs/stories/francesca-giacco)"
   - "**Slow Stories podcast** | [Reading](https://apple.co/3MO8W7a)"
