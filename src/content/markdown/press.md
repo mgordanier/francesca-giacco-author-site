@@ -4,6 +4,9 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**The List** | [5 Books That Must Go on Your European Vacation Reading
+    List](https://www.thelist.com/931828/5-books-that-must-go-on-your-european-\
+    vacation-reading-list/)"
   - "**Booklist** |
     [Review](https://www.booklistonline.com/Six-Days-in-Rome/pid=9760796)"
   - "**Ordinary Habit** |
