@@ -3,13 +3,15 @@ import { graphql } from 'gatsby';
 import SingleColumnPage from '../components/SingleColumnPage';
 
 const EventsPage = ({ data }) => {
-  const { page_heading, event_listings, title, meta_description } =
+  const { page_heading, title, meta_description } =
     data.markdownRemark.frontmatter;
 
   return (
     <SingleColumnPage
       pageHeading={page_heading}
-      markdownArray={event_listings}
+      markdownArray={[
+        'No upcoming events. Please check back later for updates.',
+      ]}
       metaTitle={title}
       metaDescription={meta_description}
     />
@@ -23,7 +25,6 @@ export const query = graphql`
         meta_description
         page_heading
         title
-        event_listings
       }
     }
   }

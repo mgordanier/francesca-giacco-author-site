@@ -19,7 +19,7 @@ const Navbar = () => {
     setNavbarOpen((prev) => !prev);
   };
 
-  const linkNames = ['about', 'writing', 'events', 'press', 'contact'];
+  const linkNames = ['about', 'writing', 'press', 'contact'];
   let showMenuIcon = false;
   let showMenuItems = true;
 
