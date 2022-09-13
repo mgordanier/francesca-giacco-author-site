@@ -4,6 +4,10 @@ title: Press | Francesca Giacco
 meta_description: Recent reviews and press coverage.
 page_heading: Press
 press_links:
+  - "**Moms Don't Have Time to Read Books podcast** |
+    [](https://podcasts.apple.com/us/podcast/moms-dont-have-time-to-read-books/\
+    id1366633318)[Interview](https://podcasts.apple.com/us/podcast/moms-dont-ha\
+    ve-time-to-read-books/id1366633318)"
   - "**The List** | [5 Books That Must Go on Your European Vacation Reading
     List](https://www.thelist.com/931828/5-books-that-must-go-on-your-european-\
     vacation-reading-list/)"
