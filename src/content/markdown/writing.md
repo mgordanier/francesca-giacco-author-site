@@ -4,6 +4,11 @@ title: Writing | Francesca Giacco
 meta_description: A selection of writing.
 page_heading: Writing
 writing-links:
+  - "**Electric Literature** |
+    [](https://cityroom.blogs.nytimes.com/2014/04/17/one-couple-alone-together/\
+    )[Interview with Madelaine
+    Lucas](https://electricliterature.com/madelaine-lucas-novel-thirst-for-salt\
+    /)"
   - "[](https://www.writersdigest.com/write-better-fiction/shame-and-success-bl\
     ending-artistic-expression-with-social-media)**Literary Hub** | [How Did a
     Fictionalized Leonard Cohen End Up in My
