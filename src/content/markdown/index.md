@@ -29,7 +29,7 @@ buy_button:
   - vendor_name: IndieBound
     vendor_link: https://www.indiebound.org/book/9781538706428
   - vendor_name: Bookshop
-    vendor_link: https://bookshop.org/books/six-days-in-rome/9781538706428
+    vendor_link: https://bookshop.org/p/books/six-days-in-rome-francesca-giacco/18785655
   - vendor_name: More Options
     vendor_link: https://www.hachettebookgroup.com/titles/francesca-giacco/six-days-in-rome/9781538706428/
 praise:
