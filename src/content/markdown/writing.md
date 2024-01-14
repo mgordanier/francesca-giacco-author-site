@@ -4,6 +4,8 @@ title: Writing | Francesca Giacco
 meta_description: A selection of writing.
 page_heading: Writing
 writing-links:
+  - "**Off Assignment**  | [5pm in
+    Dublin](https://www.offassignment.com/witching-hour/francesca-giacco)"
   - "**Electric Literature** |
     [](https://cityroom.blogs.nytimes.com/2014/04/17/one-couple-alone-together/\
     )[Interview with Madelaine
