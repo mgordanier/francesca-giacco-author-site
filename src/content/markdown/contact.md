@@ -6,9 +6,6 @@ page_heading: Contact
 contacts:
   - "[feg@francescagiacco.com](mailto:feg@francescagiacco.com)"
   - "[@fegiacco](https://www.instagram.com/fegiacco/)"
-  - For *Six Days in Rome* requests, please contact
-    [](mailto:andy.dodds@hbgusa.com)[Kamrun
-    Nesa](mailto:kamrun.nesa@hbgusa.com).
   - For film/television requests, please contact [Sally
     Willcox](mailto:sally.willcox@a3artistsagency.com).
   - For all other inquiries, please contact [Susan
